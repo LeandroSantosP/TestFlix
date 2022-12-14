@@ -3,7 +3,7 @@ import axios from "axios";
 const API_KEY = "83e7f7d3481fe2350a3e5698d335544b";
 
 export const imgAndSearchUrl =  {
-   ulrImg: 'https://image.tmdb.org/t/p/w300/', 
+   ulrImg: 'https://image.tmdb.org/t/p/original/', 
    urlSearch: 'https://api.themoviedb.org/3/search/movie/'
 }
 

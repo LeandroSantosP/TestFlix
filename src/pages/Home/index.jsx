@@ -7,14 +7,16 @@ import { SwiperSlide } from 'swiper/react';
 
 import styles from './Home.module.css';
 import { Link } from 'react-router-dom';
+import { Emphasis } from '../../components/Emphasis';
 
 export const Home = () => {
   const [treading, setTreaading] = useState([]);
   useEffect(() => {
     async function getTreding(path) {
       const response = await getMovie(path);
-      setTreaading(response.data.results)
+      setTreaading(response?.data.results)
     }
+
     getTreding(trending[0].path);
   }, []);
 
@@ -27,17 +29,19 @@ export const Home = () => {
   return (
 
     <main className={styles.container}>
-
+      
+      <section className={styles.container_emphasis}>
+        <Emphasis />
+      </section>
 
       <section className={styles.treading_container}>
-        <h1>{trending[0].title}</h1>
+        <h2>{trending[0].title}</h2>
         <SliderImg settings={settings}>
-          {treading.map(treading => (
+          {treading.length > 0 && treading.map(treading => (
             <SwiperSlide key={treading.id}>
               <Link to={`/Details/${treading.id}`}>
-              <img src={imgAndSearchUrl.ulrImg + treading.poster_path} alt={treading.name} />
+                <img src={imgAndSearchUrl.ulrImg + treading.poster_path} width="300px" alt={treading.name} />
               </Link>
-              {console.log(treading)}
             </SwiperSlide>
           ))}
         </SliderImg>
@@ -45,13 +49,10 @@ export const Home = () => {
 
 
       {category.map((cate, index) => (
-        <div key={index}>
-          <div className={styles.treding}>
-            { }
-          </div>
+        <section key={index}>
           <h1>{cate.title}</h1>
           <RowLoop cateInfo={cate} />
-        </div>
+        </section>
       ))}
 
     </main>

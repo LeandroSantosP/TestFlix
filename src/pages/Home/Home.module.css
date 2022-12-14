@@ -15,3 +15,9 @@
 .treading_container img {
    border-radius: .5rem;
 }
+
+.container_emphasis{
+   background-color: red;
+   width: 100%;
+   height: auto;
+}
