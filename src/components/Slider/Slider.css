@@ -1,0 +1,20 @@
+.swiper {
+   padding: 1rem 3rem;
+   display: flex;
+   background-color: rgba(0, 0, 0, 0.185);
+   border-radius: .5rem;
+   width: 100%;
+} 
+
+.swiper-slider {
+   display: flex;
+
+}
+
+.swiper-button-prev {
+   color: #000;
+}
+
+.swiper-button-next {
+   color: #000;
+}

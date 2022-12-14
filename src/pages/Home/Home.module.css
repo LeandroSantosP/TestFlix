@@ -1,13 +1,17 @@
 .container {
-   max-width: 70%;
-   height: 100%;
-   padding: 1rem;
    display: flex;
    flex-direction: column;
-   gap: 2rem;
    overflow-y: scroll;
 }
-.container a {
-   transform: scale(1deg);
-   overflow: hidden;
+
+.container h1 {
+   display: flex;
+   margin-left: 2rem;
+   margin-top: 3rem;
+   font-size: 2rem;
+   color: #fff;
+   font-weight: 500;
+}
+.treading_container img {
+   border-radius: .5rem;
 }

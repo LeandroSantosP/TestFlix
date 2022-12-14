@@ -7,12 +7,15 @@ export const imgAndSearchUrl =  {
    urlSearch: 'https://api.themoviedb.org/3/search/movie/'
 }
 
-const category = [
+export const trending = [
    {
       name: 'trending',
       title: 'Em alta',
       path: `/trending/all/week?api_key=${API_KEY}&languege=pt-BR`,
-   },
+   }
+]
+
+export const category = [
    {
       name: 'netflixOriginals',
       title: 'Originais da NetFlix',
