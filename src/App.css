@@ -1,0 +1,25 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+body {
+   margin: 0 auto;
+}
+
+
+.App {
+   display: flex;
+   height: 100vh;
+   color: #000;
+   font-family: 'Poppins', sans-serif;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul,li {
+   list-style: none;
+}
