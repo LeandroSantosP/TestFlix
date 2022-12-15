@@ -1,0 +1,21 @@
+.input {
+   padding: .5rem 0;
+   outline: none;
+   font-size: 1rem;
+   background-color: transparent;
+   border: 1px solid #000;
+   border-radius: .5rem;
+}
+
+.input::placeholder {
+   color: #000;
+}
+
+.input:hover {
+   background-color: rgba(17, 17, 17, 0.301);
+}
+.lab {
+   font-size: 1rem;
+   font-weight: 500;
+   color: #fff;
+}

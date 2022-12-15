@@ -1,0 +1,32 @@
+.container{
+   width: 100%;
+   height: 100vh;
+   display: flex;   
+}
+
+.trailer_container {
+   display: block;
+   width: 100%;
+   padding-top: 2rem;
+   padding-left: 2rem;
+}
+
+.movie_infos_container {
+   margin-top: 2rem;
+   font-size: .8rem;
+   color: #fff;
+   background-color: #111;
+   padding: 1rem;
+   border-radius: 1rem;
+   margin-right: 5rem;
+   max-height: 170px;
+   overflow: hidden;
+}
+
+.movie_infos h1 {
+   font-size: 1rem;
+   margin-bottom: .5rem;
+}
+.infos p {
+   font-size: .7rem;
+}

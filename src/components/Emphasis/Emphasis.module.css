@@ -1,4 +1,62 @@
 header {
-
-   height: 448px;
+   background-size: "cover";
+   margin: 0;
+   height: 669px;
+   display: flex;
+   width: 1100px;
+   position: relative;
+   object-fit: contain;
 }
+
+.container_infos {
+   display: flex;
+   flex-direction: column;
+   min-height: 300px;
+   position: absolute;
+   padding: 1rem;
+   border-radius: 1rem;
+   margin-left: 6rem;
+   top: 250px;
+   max-width: 100%;
+   color: #fff;
+   font-size: 1rem;
+   background-color: rgba(0, 0, 0, 0.185);
+
+}
+
+.featured_vertical {
+   width: inherit;
+   height: inherit;
+   background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+.featured_horizontal {
+   width: inherit;
+   height: inherit;
+   background: linear-gradient(to right, #111 10%, transparent 90%);
+}
+
+.container_infos h1 {
+   font-size: 2rem;
+   margin-bottom: 1rem;
+   width: 100%;
+   font-weight: 700;
+}
+
+.container_infos p {
+   width: 70%;
+   color: #fff;
+}
+
+.button_container {
+   display: flex;
+   gap: 4rem;
+   margin-top: 1rem;
+}
+
+input {
+   position: absolute;
+   top: 5rem;
+   left: 5rem;
+}
+

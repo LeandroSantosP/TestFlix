@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_KEY = "83e7f7d3481fe2350a3e5698d335544b";
+export const API_KEY = "83e7f7d3481fe2350a3e5698d335544b";
 
 export const imgAndSearchUrl =  {
    ulrImg: 'https://image.tmdb.org/t/p/original/', 
@@ -10,7 +10,7 @@ export const imgAndSearchUrl =  {
 export const trending = [
    {
       name: 'trending',
-      title: 'Em alta',
+      title: 'Destaque',
       path: `/trending/all/week?api_key=${API_KEY}&languege=pt-BR`,
    }
 ]
@@ -31,15 +31,22 @@ export const category = [
       title: 'Comédia',
       path: `/discover/tv?api_key=${API_KEY}&with_genres=35`,
    },
-/*    {
+   {
       name: 'romances',
       title: 'Romancess',
-      path: `/discover/tv?api_key=${API_KEY}&with_genres=1074`,
-   }, */
+      path: `/discover/tv?api_key=${API_KEY}&with_genres=10749`,
+   },
    {
       name: 'documentary',
       title: 'Documentarios',
       path: `/discover/tv?api_key=${API_KEY}&with_genres=99`,
+   },
+   {
+      name: 'Terror',
+      title: 'Terror',
+      path: `/discover/movie?with_genres=27&languege=pt-BR&api_key=${API_KEY}`
+      
+   ,
    },
 ]
 

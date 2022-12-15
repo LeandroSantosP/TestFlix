@@ -1,10 +1,39 @@
 .container {
+   background-color: #111;
+   max-width: 300px;
+   color: #fff;
    display: flex;
-   background-color: #1E2019;
    flex-direction: column;
    align-items: center;
    justify-content: space-evenly;
-   min-width: 300px;
-   height: 100vh;
-   flex: 1;
+   position: relative;
+   border-right: 2x solid #fff;
 }
+
+.details {
+   display: flex;
+   flex-direction: column;
+   height: 500px;
+   margin: 0 auto;
+   justify-content: center;
+   align-items: center;
+   border-radius: .5rem;
+   border: 1px solid #fff;
+   gap: 5rem;
+   padding: 2rem;
+   margin-top: 2rem;
+   background-color: rgba(0, 0, 0, 0.082);
+   transition: .2s;
+}
+
+.details ul, li{
+   margin-bottom: .2rem;
+   font-size: 2rem;
+   text-align: center;
+}
+.infos {
+   margin-top: 2rem;
+   display: flex;
+   gap: 2rem;
+}
+

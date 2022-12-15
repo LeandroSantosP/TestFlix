@@ -1,22 +1,30 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router-dom';
+import { Button } from '../CustomInput/Button/'
 import styles from './NavBar.module.css'
 
-export const Navbar = () => {
+export const Navbar = ({ showBackButton = false } ) => {
+
+const learnFlix = ["L", "E", "A", "R", "N", "F", "L", "I", "X"];
+const navegation = useNavigate();
+
+function handleClick() {
+   navegation("/")
+};
 
    return (
       <header className={styles.container}>
-         <div className={styles.logo}>
-            <img src='' alt="" />
-            <input type="text" />
-         </div>
          <div className={styles.details}>
             <ul>
-               <li>info 1</li>
-               <li>info 2</li>
-               <li>info 3</li>
-               <li>info 4</li>
+               {learnFlix.map((item, index) => (
+                  <li key={index}>{item}</li>
+               ))}
             </ul>
+         </div>
+         <div className={styles.infos}>
+               <Button text="Login" />
+               <Button text="Sair" />
+               {showBackButton && <Button onClick={handleClick} type="button" text='voltar'/>}
          </div>
       </header>
    )
